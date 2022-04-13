@@ -1,0 +1,71 @@
+.wwica-nav {
+    column-gap: 3rem;
+    row-gap: 1rem;
+}
+
+.wwica-title,
+.wwica-title-full {
+    font-size: 11px;
+}
+
+.wwica-title {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.wwica-title-full {
+    white-space: pre-wrap;
+    /* CSS3 */
+    white-space: -moz-pre-wrap;
+    /* Firefox */
+    white-space: -pre-wrap;
+    /* Opera <7 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* IE */
+
+    color: var(--hiddend-color);
+}
+
+.wwica-icon {
+    width: 3rem;
+    /* padding: 0 !important; */
+
+    margin-bottom: 5px;
+}
+
+.logo-container {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    width: 15rem;
+    gap: 1rem;
+}
+
+.logo-container:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.logo-container:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+@media (max-width: 991px) {
+    .btn-donate {
+        display: none !important;
+    }
+}
