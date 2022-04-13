@@ -66,6 +66,7 @@ class PrayerTime extends React.Component {
 
     /**
      * This function will get the prayer time from Masjidbox
+     * 
      */
     async getPrayerTime() {
         const prayerTime = new Date().toISOString().split('T')[0] + "T00:00:00.000" + "%2B01:00"
