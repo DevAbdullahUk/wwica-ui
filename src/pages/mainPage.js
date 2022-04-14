@@ -6,11 +6,6 @@ import PrayerTime from '../components/prayerTime';
 import '../styles/mainPage.css'
 
 class MainPage extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-
     render() {
 
         return (
