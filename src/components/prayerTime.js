@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import moon from '../assets/moon-symbol.png'
 import sun from '../assets/sun-symbol.png'
@@ -69,7 +69,7 @@ class PrayerTime extends React.Component {
      * 
      */
     async getPrayerTime() {
-        const prayerTime = new Date().toISOString().split('T')[0] + "T00:00:00.000" + "%2B01:00"
+        const prayerTime = `${new Date().toISOString().split('T')[0]}T00:00:00.000%2B01:00`
         const url = "https://api.masjidbox.com/1.0/masjidbox/landing/athany?get=wg&days=1&begin="
         const headers = {
             "accept": "application/json, text/plain, */*",
@@ -111,7 +111,7 @@ class PrayerTime extends React.Component {
             <div class="shadow-none p-3 mb-5 bg-light rounded prayer-card">
 
                 <div className="prayer-icon">
-                    <img src={prayerInfo.icon}></img>
+                    <img alt="prayer icon" src={prayerInfo.icon}></img>
                 </div>
 
                 <div className="prayer-name">{prayerInfo.name}</div>
