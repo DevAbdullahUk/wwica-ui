@@ -3,6 +3,12 @@
     row-gap: 1rem;
 }
 
+.wwica-header {
+    position: inherit;
+    width: 100%;
+  }
+
+
 .wwica-title,
 .wwica-title-full {
     font-size: 11px;
