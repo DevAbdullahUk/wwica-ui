@@ -35,3 +35,13 @@
 .scrolling-wrapper::-webkit-scrollbar-thumb:hover {
   background: var(--dark-color);
 }
+
+
+
+@media (max-width: 991px) {
+
+    .scrolling-wrapper::-webkit-scrollbar {
+        display: none !important;
+      }
+    
+}
