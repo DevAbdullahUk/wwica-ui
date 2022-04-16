@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import WelcomeMain from '../components/welcomeMain';
 import PrayerTime from '../components/prayerTime';
 import DailyHadith from '../components/dailyHadith';
+import NewsFeed from '../components/newsFeed';
 
 import '../styles/mainPage.css'
 
@@ -14,6 +15,7 @@ class MainPage extends Component {
                 <WelcomeMain></WelcomeMain>
                 <PrayerTime></PrayerTime>
                 <DailyHadith></DailyHadith>
+                <NewsFeed></NewsFeed>
             </div>
         )
 

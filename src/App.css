@@ -1,6 +1,7 @@
 :root {
   --accent-color: #227a4b;
   --light-color: #227a4b;
+  --dark-color: #135733;
   --hiddend-color: #1f2321;
   --clear-color: #ffffff;
 }
@@ -16,26 +17,32 @@ body {
 
 .App {
   height: 100vh;
-  
-  /* grid container settings */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: 
-    'header'
-    'main'
-    'footer';
 }
 
-.App > header {
-  grid-area: header;
+
+html, body, .root , .App {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
 }
 
-.App > main {
-  grid-area: main;
-  padding: 15px 5px 10px 5px;
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.App > footer {
-  grid-area: footer;
+header {
+  height: 75px;
+}
+
+main {
+  flex: auto;
+  background-color: #ccc;
+}
+
+footer {
+  height: 100px;
 }

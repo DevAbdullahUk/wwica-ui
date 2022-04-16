@@ -61,7 +61,7 @@ class PrayerTime extends React.Component {
     }
 
     componentDidMount() {
-        this.getPrayerTime();
+        // this.getPrayerTime();
     }
 
     /**
