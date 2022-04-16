@@ -1,3 +1,7 @@
+.news-group{
+    width: 100%;
+}
+
 .scrolling-wrapper {
   display: flex !important;
   flex-direction: row !important;
@@ -12,6 +16,8 @@
 .news-card {
   min-width: 18rem;
   min-height: 110px;
+
+  max-width: 18rem;
 }
 
 .scrolling-wrapper::-webkit-scrollbar {

@@ -7,7 +7,9 @@ export const welcomeBoxText =
         'To create unity through religion and to improve and enhance skills, knowledge and capacity of the community to espouse values of diversity, tolerance and moderation and promote interfaith dialogue with other religious group, by reaching out and acting as a resource centre for the local communities, voluntary and statutory agencies and the wider community as a whole.'
     ]
 
-
+/**
+ * List of Hadiths to be displayed on the page
+ */
 export const dailyHadithText = [
     {
         img_url:'https://images.unsplash.com/photo-1586767003402-8ade266deb64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',

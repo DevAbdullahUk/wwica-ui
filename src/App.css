@@ -6,12 +6,11 @@
   --clear-color: #ffffff;
 }
 
-
 body {
   margin: 0;
 }
 
-.root{
+.root {
   height: 100vh;
 }
 
@@ -19,8 +18,10 @@ body {
   height: 100vh;
 }
 
-
-html, body, .root , .App {
+html,
+body,
+.root,
+.App {
   height: 100%;
   width: 100%;
   padding: 0;
@@ -45,4 +46,12 @@ main {
 
 footer {
   height: 100px;
+}
+
+.card > * > a {
+  color: var(--accent-color);
+}
+
+.card > * > a:hover {
+  color: var(--hiddend-color);
 }
