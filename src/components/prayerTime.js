@@ -108,7 +108,7 @@ class PrayerTime extends React.Component {
         const prayerInfo = prayer.prayerInfo;
 
         return (
-            <div class="shadow-none p-3 mb-5 bg-light rounded prayer-card">
+            <div class="shadow-none p-3 m-2 bg-light rounded prayer-card">
 
                 <div className="prayer-icon">
                     <img alt="prayer icon" src={prayerInfo.icon}></img>
