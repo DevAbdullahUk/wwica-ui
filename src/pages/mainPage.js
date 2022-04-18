@@ -4,6 +4,7 @@ import WelcomeMain from '../components/welcomeMain';
 import PrayerTime from '../components/prayerTime';
 import DailyHadith from '../components/dailyHadith';
 import NewsFeed from '../components/newsFeed';
+import SupportWWICA from '../components/supportWWICA';
 
 import '../styles/mainPage.css'
 
@@ -16,6 +17,7 @@ class MainPage extends Component {
                 <PrayerTime></PrayerTime>
                 <DailyHadith></DailyHadith>
                 <NewsFeed></NewsFeed>
+                <SupportWWICA></SupportWWICA>
             </div>
         )
 

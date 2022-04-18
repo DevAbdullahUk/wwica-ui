@@ -43,5 +43,18 @@
     .scrolling-wrapper::-webkit-scrollbar {
         display: none !important;
       }
+
+      .news-group{
+        width: 100% !important;
+      }
     
+      .news-card:first-child{
+        padding-left: 1.5rem;
+        min-width: 19.5rem;
+      }
+
+      .news-card:last-child{
+        padding-right: 1.5rem;
+        min-width: 19.5rem;
+      }
 }

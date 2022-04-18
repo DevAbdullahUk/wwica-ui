@@ -35,16 +35,18 @@ body,
   flex-direction: column;
 }
 
-header {
+.header {
   height: 75px;
+  width: 100%;
+  z-index: 1000;
 }
 
-main {
+.main {
   flex: auto;
-  background-color: #ccc;
+  margin-top: 3rem;
 }
 
-footer {
+.footer {
   height: 100px;
 }
 
