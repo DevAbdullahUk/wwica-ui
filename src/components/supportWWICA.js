@@ -130,6 +130,7 @@ class SupportWWICA extends React.Component {
   render() {
     return (
       <div className="support-wwica">
+        <h5 className="layout-title">Support Your Masjid</h5>
         <div className="support-group">
           <this.supportText></this.supportText>
           <this.supportHadith></this.supportHadith>
