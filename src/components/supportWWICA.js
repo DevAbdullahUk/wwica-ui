@@ -11,16 +11,23 @@ class SupportWWICA extends React.Component {
     super(props);
 
     this.supportText = this.supportText.bind(this);
-    this.supportForm = this.supportForm.bind(this);
+    this.supportHadith = this.supportHadith.bind(this);
     this.supportDonation = this.supportDonation.bind(this);
     this.amountAction = this.amountAction.bind(this);
     this.typeAction = this.typeAction.bind(this);
   }
 
-  amountAction(amount) { console.log(amount)}
+  amountAction(amount) {
+    console.log(amount);
+  }
 
   typeAction() {}
 
+  /**
+   * display donation open message in a card. This will be the first card
+   *
+   * @returns donation open message
+   */
   supportText() {
     return (
       <Card>
@@ -38,6 +45,11 @@ class SupportWWICA extends React.Component {
     );
   }
 
+  /**
+   * dispaly Hadith or Ayah in the a card. this will be the second card
+   *
+   * @returns donation hadith or ayah in a card
+   */
   supportHadith() {
     return (
       <Card className="support-hadith">
@@ -53,6 +65,14 @@ class SupportWWICA extends React.Component {
     );
   }
 
+  /**
+   * TODO: connect with paypal
+   *
+   * Display the donation button where the user can donate or explor other donation
+   * options
+   *
+   * @returns donation card
+   */
   supportDonation() {
     return (
       <Card>
@@ -66,9 +86,15 @@ class SupportWWICA extends React.Component {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item onClick={()=>this.amountAction("£10")}>£10</Dropdown.Item>
-                  <Dropdown.Item onClick={()=>this.amountAction("£15")}>£15</Dropdown.Item>
-                  <Dropdown.Item onClick={()=>this.amountAction("£25")}>£25</Dropdown.Item>
+                  <Dropdown.Item onClick={() => this.amountAction("£10")}>
+                    £10
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => this.amountAction("£15")}>
+                    £15
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={() => this.amountAction("£25")}>
+                    £25
+                  </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
             </div>
@@ -100,8 +126,6 @@ class SupportWWICA extends React.Component {
       </Card>
     );
   }
-
-  supportForm() {}
 
   render() {
     return (
