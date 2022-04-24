@@ -21,7 +21,7 @@ class NewsFeed extends React.Component {
         <Card>
             {
                 image ?
-                <img class="card-img-top" src={image} alt="Card image cap"/>
+                <img class="card-img-top" src={image} alt="news"/>
                 :
                 null 
             }

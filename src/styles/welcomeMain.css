@@ -48,11 +48,11 @@
     .welcome-box {
         width: 100%;
         height: 25rem;
-        position: fixed;
+        position:fixed;
 
         top: 0px;
         border-radius: 0% !important;
-
+        width: 100% !important;
         z-index: -1;
     }
 

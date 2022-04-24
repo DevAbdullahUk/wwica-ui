@@ -1,0 +1,71 @@
+.support-group {
+  display: flex !important;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.support-hadith {
+  background-color: var(--accent-color) !important;
+  border-color: white;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.support-hadith > span {
+  color: rgba(255, 255, 255, 0.37);
+}
+
+.support-group > .card {
+  width: calc(100% / 2.6);
+}
+
+.support-donation {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+
+.support-donation-bt {
+  bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.support-donation-bt-success {
+  min-width: 90px;
+}
+
+.support-donation-bt-success :last-child {
+  display: none;
+  transition: 0.1s;
+}
+
+.support-donation-bt-success:hover :first-child {
+  display: none;
+}
+
+.support-donation-bt-success:hover :last-child {
+  display: contents;
+}
+
+#amount,
+#type {
+  width: 100%;
+}
+
+
+@media (max-width: 991px) {
+  .support-group > .card {
+    max-width: none;
+    min-width: none;
+    width: 100%;
+  }
+
+  .support-group {
+    flex-direction: column;
+  }
+}
