@@ -49,12 +49,12 @@
       }
     
       .news-card:first-child{
-        padding-left: 1.5rem;
-        min-width: 19.5rem;
+        padding-left: .9rem;
+        min-width: 19rem;
       }
 
       .news-card:last-child{
-        padding-right: 1.5rem;
-        min-width: 19.5rem;
+        padding-right: .9rem;
+        min-width: 19rem;
       }
 }

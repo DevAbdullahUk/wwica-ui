@@ -2,6 +2,9 @@ import React from "react";
 
 import "../styles/supportWWICA.css";
 import Card from "react-bootstrap/Card";
+import Form from "react-bootstrap/Form";
+import Dropdown from "react-bootstrap/Dropdown";
+import Button from "react-bootstrap/Button";
 
 class SupportWWICA extends React.Component {
   constructor(props) {
@@ -9,8 +12,14 @@ class SupportWWICA extends React.Component {
 
     this.supportText = this.supportText.bind(this);
     this.supportForm = this.supportForm.bind(this);
-    this.supporDonation = this.supporDonation.bind(this);
+    this.supportDonation = this.supportDonation.bind(this);
+    this.amountAction = this.amountAction.bind(this);
+    this.typeAction = this.typeAction.bind(this);
   }
+
+  amountAction(amount) { console.log(amount)}
+
+  typeAction() {}
 
   supportText() {
     return (
@@ -44,8 +53,52 @@ class SupportWWICA extends React.Component {
     );
   }
 
-  supporDonation() {
-    <Card></Card>;
+  supportDonation() {
+    return (
+      <Card>
+        <Card.Body>
+          <div className="support-donation">
+            <div>
+              <Form.Label htmlFor="amount">Amount</Form.Label>
+              <Dropdown>
+                <Dropdown.Toggle variant="success" id="amount">
+                  Donation Amount
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item onClick={()=>this.amountAction("£10")}>£10</Dropdown.Item>
+                  <Dropdown.Item onClick={()=>this.amountAction("£15")}>£15</Dropdown.Item>
+                  <Dropdown.Item onClick={()=>this.amountAction("£25")}>£25</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </div>
+
+            <div>
+              <Form.Label htmlFor="type">Type</Form.Label>
+              <Dropdown>
+                <Dropdown.Toggle variant="success" id="type">
+                  Donation Type
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item>Type</Dropdown.Item>
+                  <Dropdown.Item>Another Type</Dropdown.Item>
+                  <Dropdown.Item> Something else</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </div>
+
+            <div className="support-donation-bt">
+              <Button variant="outline-success">Other ways to donate</Button>
+              <Button variant="success" className="support-donation-bt-success">
+                <span>Donate</span>
+                <span>❤️</span>
+              </Button>
+            </div>
+          </div>
+        </Card.Body>
+      </Card>
+    );
   }
 
   supportForm() {}
@@ -54,8 +107,9 @@ class SupportWWICA extends React.Component {
     return (
       <div className="support-wwica">
         <div className="support-group">
-          {/* <this.supportText></this.supportText>
-          <this.supportHadith></this.supportHadith> */}
+          <this.supportText></this.supportText>
+          <this.supportHadith></this.supportHadith>
+          <this.supportDonation></this.supportDonation>
         </div>
       </div>
     );
