@@ -1,0 +1,44 @@
+.connect-wwica-group{
+    display: flex;
+    gap: 1rem;
+}
+
+.connect-wwica-group> .card{
+    flex-grow: 1;
+}
+
+.connect-wwica-group> div{
+    flex-grow: 0;
+}
+
+.display-contact-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.display-contact-top> div:first-child {
+    flex-grow: 1;
+}
+
+.display-contact-top> div:last-child {
+    flex-grow: 2;
+}
+
+.display-contact-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.display-contact-info-top>p{
+    width: 30rem;
+}
+
+.display-contact-info-top>div>span{
+    font-weight: 700;
+}
+
+.display-contact-info-top>div{
+   padding: 0.5rem;
+}

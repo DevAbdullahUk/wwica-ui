@@ -5,6 +5,7 @@ import PrayerTime from '../components/prayerTime';
 import DailyHadith from '../components/dailyHadith';
 import NewsFeed from '../components/newsFeed';
 import SupportWWICA from '../components/supportWWICA';
+import ConnectWWICA from '../components/contactWWICA';
 
 import '../styles/mainPage.css'
 
@@ -18,6 +19,7 @@ class MainPage extends Component {
                 <DailyHadith></DailyHadith>
                 <NewsFeed></NewsFeed>
                 <SupportWWICA></SupportWWICA>
+                <ConnectWWICA></ConnectWWICA>
             </div>
         )
 
