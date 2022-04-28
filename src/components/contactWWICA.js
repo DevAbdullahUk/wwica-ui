@@ -46,7 +46,7 @@ class ConnectWWICA extends React.Component {
 
   displayContactUs() {
     return (
-      <Card>
+      <Card className="display-contact-card">
         <Card.Body>
           <div className="display-contact-top">
             <div>
