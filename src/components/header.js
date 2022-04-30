@@ -69,7 +69,7 @@ class Header extends Component {
 
     render() {
         return (
-            <div className="shadow mb-5 bg-white">
+            <div className="shadow mb-5 bg-white wwica-top-nav">
                 <Navbar expand="lg">
                     <Container>
                         <Navbar.Brand href="#home">

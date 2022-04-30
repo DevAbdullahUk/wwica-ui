@@ -14,9 +14,11 @@ function App() {
 
       <div className="main">
         <MainPage></MainPage>
+
+
+        <div className="footer">This is the footer</div>
       </div>
 
-      <div className="footer">This is the footer</div>
     </div>
   );
 }
