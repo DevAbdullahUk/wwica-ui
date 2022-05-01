@@ -14,8 +14,6 @@ class NewsFeed extends React.Component {
 
   newsCarDisplay(props) {
     const {title, date, description, image} = props.news;
-
-    console.log(image)
     return (
       <div className="news-card">
         <Card>

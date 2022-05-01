@@ -4,6 +4,7 @@ import Header from "./components/header";
 import MainPage from "./pages/mainPage";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <MainPage></MainPage>
 
 
-        <div className="footer">This is the footer</div>
+        <Footer></Footer>
       </div>
 
     </div>

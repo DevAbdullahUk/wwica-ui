@@ -1,0 +1,43 @@
+.page-footer {
+  background-color: var(--accent-color);
+  margin-top: 2.5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+.footer-group > table {
+  color: var(--bs-gray-200);
+  border-collapse: separate;
+  border-spacing: 2rem 0.5rem;
+  height: fit-content;
+}
+
+.footer-group > span {
+  font-size: small;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.37);
+  padding: 0.5rem;
+}
+
+.footer-group > table > tr > td {
+  font-size: small;
+  vertical-align: top;
+}
+
+@media (max-width: 1313px) {
+  .footer-group {
+    margin-left: 1rem;
+  }
+
+  .footer-group > table > tr > td {
+    width: 10rem;
+  }
+}
