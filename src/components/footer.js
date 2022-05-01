@@ -1,5 +1,5 @@
 import React from "react";
-
+import useWindowPosition from '../helpers/scrollbarPosition'
 import "../styles/footer.css";
 
 class Footer extends React.Component {
@@ -7,7 +7,12 @@ class Footer extends React.Component {
     super();
     this.displayQuickLinks = this.displayQuickLinks.bind(this);
     this.displayAboutThisSite = this.displayAboutThisSite.bind(this);
+
+    this.setState({
+        theposition: useWindowPosition
+    });
   }
+
 
   displayAboutThisSite() {
     return (
@@ -26,6 +31,7 @@ class Footer extends React.Component {
     );
   }
 
+  
   displayQuickLinks() {
     return (
       <div className="footer-group">
