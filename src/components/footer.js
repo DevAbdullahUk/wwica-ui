@@ -1,5 +1,4 @@
 import React from "react";
-import useWindowPosition from '../helpers/scrollbarPosition'
 import "../styles/footer.css";
 
 class Footer extends React.Component {
@@ -7,31 +6,36 @@ class Footer extends React.Component {
     super();
     this.displayQuickLinks = this.displayQuickLinks.bind(this);
     this.displayAboutThisSite = this.displayAboutThisSite.bind(this);
-
-    this.setState({
-        theposition: useWindowPosition
-    });
   }
 
-
+  /**
+   * display the about this website infomation in the footer
+   *
+   * @returns infomation about this website
+   */
   displayAboutThisSite() {
     return (
       <div className="footer-group">
         <span> ABOUT THE SITE </span>
         <table>
           <tr>
+            <td>Built for WWICA 2022 by AJ & MR</td>
             <td>
-              Built for WWICA 2022 by AJ &
-              MR
+              We don't use cookies, track our users or display ads on this
+              website.
             </td>
-            <td>We don't use cookies, track our users or display ads on this website.</td>
           </tr>
         </table>
       </div>
     );
   }
 
-  
+  /**
+   * display quick links in the footer
+   * 
+   * TODO: add link url
+   * @returns link to pages in the website
+   */
   displayQuickLinks() {
     return (
       <div className="footer-group">
