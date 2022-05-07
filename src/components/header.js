@@ -45,11 +45,11 @@ class Header extends Component {
     links() {
         return (
             <>
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">About us</Nav.Link>
-                <Nav.Link href="#link">Services</Nav.Link>
-                <Nav.Link href="#link">Gallery</Nav.Link>
-                <Nav.Link href="#link">Zakat</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/about">About us</Nav.Link>
+                <Nav.Link href="/services">Services</Nav.Link>
+                <Nav.Link href="/school">Islamic Education</Nav.Link>
+                <Nav.Link href="/zakat">Zakat</Nav.Link>
             </>
         )
     }
