@@ -1,0 +1,35 @@
+.about-page{
+    height: 100%;
+}
+
+.top-about{
+    background-color: var(--accent-color);
+    height: 50% ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: normal;
+    overflow: hidden;
+}
+
+.mosque-front{
+    background-image: url("../assets/mosque-front.svg");
+    background-repeat: repeat-x;
+    background-size:19rem 16rem;
+    height: 15.5rem;
+    margin-bottom: -1px;
+    width: 150%;
+    position: absolute;
+    bottom: 0;
+}
+
+.mosque-back{
+    background-image: url("../assets/mosque-back.svg");
+    background-repeat: repeat-x;
+    background-size:24rem 25rem;
+    width: 150%;
+    height: 19.5rem;
+    position: relative;
+}

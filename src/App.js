@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Footer from "./components/footer";
 import AboutPage from "./pages/aboutPage";
+import { useEffect, useState } from "react";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
 
             <Route
               path="*"
-              element={<div> No page, or not implemented yet 🏗️ </div>}
+              element={<div> No page, or not implemented yet 🏗️</div>}
             />
           </Routes>
 
