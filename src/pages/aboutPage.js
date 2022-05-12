@@ -22,6 +22,7 @@ class AboutPage extends React.Component {
     this.displayModal = this.displayModal.bind(this);
     this.handleReadMoreBt = this.handleReadMoreBt.bind(this);
     this.displayAboutCards = this.displayAboutCards.bind(this);
+    this.displayFlowerBackground = this.displayFlowerBackground.bind(this);
   }
 
   componentDidMount() {
@@ -29,7 +30,7 @@ class AboutPage extends React.Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll".this.handlePageScroll);
+    window.removeEventListener("scroll", this.handlePageScroll);
   }
 
   handlePageScroll() {
@@ -185,12 +186,24 @@ class AboutPage extends React.Component {
     );
   }
 
+  displayFlowerBackground() {
+    const { scrollY } = this.state;
+
+    return (
+      <div
+        className="flower-background"
+        style={{ transform: `translateY(${scrollY * 0.1}px)` }}
+      ></div>
+    );
+  }
+
   render() {
     return (
       <div className="about-page">
         <this.displayModal></this.displayModal>
         <this.displayAbout></this.displayAbout>
         <this.displayAboutCards></this.displayAboutCards>
+        <this.displayFlowerBackground></this.displayFlowerBackground>
       </div>
     );
   }

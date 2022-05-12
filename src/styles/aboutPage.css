@@ -57,6 +57,18 @@
   align-self: center;
 }
 
+.flower-background{
+    background-image: url("../assets/flower.svg");
+    color: #0000001a;
+    background-repeat: no-repeat;
+    height: 20rem;
+    width: 20rem;
+    bottom: 15%;
+    left:10%;
+    position:fixed;
+    z-index: -1;
+}
+
 .top-about > div > Button {
   display: none;
 }
@@ -74,7 +86,7 @@
 }
 
 .body-about > .card {
-  width: 25rem !important;
+  width: 20rem !important;
   min-height: 20rem;
 }
 
@@ -106,5 +118,9 @@
   .body-about > .card {
     width: 40rem !important;
     min-height: 10rem;
+  }
+
+  .about-page {
+    height: 90%;
   }
 }
