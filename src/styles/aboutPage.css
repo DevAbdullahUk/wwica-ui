@@ -30,8 +30,8 @@
 
 .top-about > div > p:nth-child(3) {
   padding: 1rem 1rem;
-  border-left: solid 0.4rem #0000004b;
   background-color: #00000027;
+  border-radius: .3rem;
   font-family: "Baloo Bhaijaan 2", cursive;
 }
 

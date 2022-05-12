@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Footer from "./components/footer";
 import AboutPage from "./pages/aboutPage";
-import { useEffect, useState } from "react";
+
 
 function App() {
   return (
