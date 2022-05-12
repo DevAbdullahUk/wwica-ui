@@ -1,4 +1,5 @@
 .main-page-container {
+    margin-top:  calc(75px + 2rem);
     display: flex !important;
     flex-direction: column;
     justify-content: center;

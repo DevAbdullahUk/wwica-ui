@@ -44,14 +44,10 @@ export const dailyHadithText = [
  * List of text about wwica. this text will be displayed in the about page
  */
 export const whoAreWe = [
-  "West Wales Islamic Cultural Association (WWICA) is a registered charitable organization (Charity Number: 1120304). It was founded in 1999 by 3 professional families that work in the local Hospital. We gained charity number in 2007.",
-  "Our members are from a multi ethnic, mainly professional background.",
-  "We aim to work for advancement of the Islamic religion in accordance with the teachings of the Holy Quran and Sunnah of the Prophet Muhammad (peace be upon him) in West Wales region.",
+  "West Wales Islamic Cultural Association (WWICA) is a registered charitable organization (Charity Number: 1120304). It was founded in 1999 by 3 professional families that work in the local Hospital. We gained charity number in 2007. Our members are from a multi ethnic, mainly professional background. We aim to work for advancement of the Islamic religion in accordance with the teachings of the Holy Quran and Sunnah of the Prophet Muhammad (peace be upon him) in West Wales region.",
   "By blessing of Almighty ALLAH and the generous donations of our local community and wider Muslim community we were able to build our own Masjid (Mosque) and Madrasah (School) which opened for use in June 2014.",
   `The open day in April 2015 was a testimony of WWICA’s vision of keeping Muslim community integrated and an asset to the wider West Wales community. The open day was well attended by many politicians, senior police officers, senior fire officers, religious representatives, school head teachers as well as Executives of Carmarthen County Council and Hywel Dda University Health Board.
     The Masjid offers facilities to Muslim community for daily prayers, Jummaa prayers, Taraweeh prayers, Janaiza prayers, Sunday school (Islamia), Quran teaching for children and adults, social activities etc`,
   `Since the establishment of  WWICA , Hywel Dda University Health Board and St David Trinity University in Carmarthen have seen steady rise in Muslim Doctors accepting positions and staying (unlike in the past ) in the Hospital and Muslim students accepting places in the University as their Religious needs are adequately catered for by WWICA .`,
-  "WWICA actively negotiated for a Muslim section at Carmarthen cemetery for which we are grateful to Carmarthen Town Council for their understanding and support.",
-  "Our Masjid has been attracting local school visits as part of their Religious Education (RE) and WWICA visiting local schools upon invitation.",
-  "WWICA has successfully carried out maiden Islamic exhibition in Carmarthen which was well attended and liked by the entire community.  Many more are planned for the future Inn Sha Allah.",
+  "WWICA actively negotiated for a Muslim section at Carmarthen cemetery for which we are grateful to Carmarthen Town Council for their understanding and support. Our Masjid has been attracting local school visits as part of their Religious Education (RE) and WWICA visiting local schools upon invitation. WWICA has successfully carried out maiden Islamic exhibition in Carmarthen which was well attended and liked by the entire community.  Many more are planned for the future Inn Sha Allah.",
 ];

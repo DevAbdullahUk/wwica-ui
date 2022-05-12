@@ -1,35 +1,110 @@
-.about-page{
-    height: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap");
+
+.about-page {
+  height: 100%;
 }
 
-.top-about{
-    background-color: var(--accent-color);
-    height: 50% ;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: normal;
-    overflow: hidden;
+.top-about {
+  background-color: var(--accent-color);
+  padding-top: 5rem;
+  height:60rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: normal;
+  overflow: hidden;
 }
 
-.mosque-front{
-    background-image: url("../assets/mosque-front.svg");
-    background-repeat: repeat-x;
-    background-size:19rem 16rem;
-    height: 15.5rem;
-    margin-bottom: -1px;
-    width: 150%;
-    position: absolute;
-    bottom: 0;
+.top-about > div > h4 {
+  color: rgba(255, 255, 255, 0.438);
 }
 
-.mosque-back{
-    background-image: url("../assets/mosque-back.svg");
-    background-repeat: repeat-x;
-    background-size:24rem 25rem;
-    width: 150%;
-    height: 19.5rem;
-    position: relative;
+.top-about > div {
+  padding: 3rem 9rem;
+}
+
+.top-about > div > p {
+  color: var(--bs-gray-300);
+}
+
+.top-about > div > p:nth-child(3) {
+  padding: 1rem 1rem;
+  border-left: solid 0.4rem #0000004b;
+  background-color: #00000027;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+.mosque-front {
+  background-image: url("../assets/mosque-front.svg");
+  background-repeat: repeat-x;
+  background-size: 19rem 16rem;
+  height: 15.5rem;
+  margin-bottom: -1px;
+  width: 200%;
+  position: absolute;
+  bottom: 0;
+  align-self: center;
+}
+
+.mosque-back {
+  background-image: url("../assets/mosque-back.svg");
+  background-repeat: repeat-x;
+  background-size: 24rem 25rem;
+  width: 200%;
+  height: 19.5rem;
+  position: relative;
+  align-self: center;
+}
+
+.top-about > div > Button {
+  display: none;
+}
+
+.body-about {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-about > .card {
+  width: 25rem !important;
+  min-height: 20rem;
+}
+
+@media (max-width: 1454px) {
+    .top-about {
+        height:71rem;
+      }
+}
+
+
+
+@media (max-width: 991px) {
+  .top-about > div > Button {
+    display: inline;
+  }
+
+  .top-about > div:first-of-type > p:not(:first-of-type) {
+    display: none !important;
+  }
+
+  .top-about > div {
+    padding: 3rem 4rem;
+  }
+
+  .top-about {
+    height: 45%;
+  }
+
+  .body-about > .card {
+    width: 40rem !important;
+    min-height: 10rem;
+  }
 }
