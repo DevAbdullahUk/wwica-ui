@@ -1,72 +1,57 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 .about-page {
+  padding-top: 5rem;
   height: 100%;
 }
 
 .top-about {
-  background-color: var(--accent-color);
-  padding-top: 5rem;
-  height:60rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: normal;
-  overflow: hidden;
-}
-
-.top-about > div > h4 {
-  color: rgba(255, 255, 255, 0.438);
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
 
 .top-about > div {
-  padding: 3rem 9rem;
+  padding: 3rem 8rem;
 }
 
 .top-about > div > p {
-  color: var(--bs-gray-300);
+  color: var(--bs-gray-900);
 }
 
 .top-about > div > p:nth-child(3) {
-  padding: 1rem 1rem;
-  background-color: #00000027;
-  border-radius: .3rem;
-  font-family: "Baloo Bhaijaan 2", cursive;
+  font-weight: 300;
+  font-family: "Pacifico", cursive;
+  padding: 1rem 5rem;
+  color: var(--accent-color);
 }
 
-.mosque-front {
-  background-image: url("../assets/mosque-front.svg");
-  background-repeat: repeat-x;
-  background-size: 19rem 16rem;
-  height: 15.5rem;
-  margin-bottom: -1px;
-  width: 200%;
-  position: absolute;
-  bottom: 0;
-  align-self: center;
+.top-about > div:nth-child(2) {
+  position: relative;
 }
 
 .mosque-back {
-  background-image: url("../assets/mosque-back.svg");
-  background-repeat: repeat-x;
-  background-size: 24rem 25rem;
-  width: 200%;
-  height: 19.5rem;
-  position: relative;
-  align-self: center;
+  position: absolute;
+  background-image: radial-gradient(#135733 2.5px, transparent 2.5px);
+  background-size: 16px 16px;
+  background-color: #ffffff;
+  width: 20rem;
+  height: 23rem;
+  margin: 3rem;
 }
 
-.flower-background{
-    background-image: url("../assets/flower.svg");
-    color: #0000001a;
-    background-repeat: no-repeat;
-    height: 20rem;
-    width: 20rem;
-    bottom: 15%;
-    left:10%;
-    position:fixed;
-    z-index: -1;
+.mosque-front {
+  display: inline-block; 
+   margin: 0 auto;
+  background-color: var(--accent-color);
+}
+
+.mosque-front > img {
+  width: 19rem;
+  padding-top: 2rem;
 }
 
 .top-about > div > Button {
@@ -90,15 +75,7 @@
   min-height: 20rem;
 }
 
-@media (max-width: 1454px) {
-    .top-about {
-        height:71rem;
-      }
-}
-
-
-
-@media (max-width: 991px) {
+@media (max-width: 1482px) {
   .top-about > div > Button {
     display: inline;
   }
@@ -111,11 +88,8 @@
     padding: 3rem 4rem;
   }
 
-  .top-about {
-    height: 45%;
-  }
-
   .body-about > .card {
+    margin-top: 2rem;
     width: 40rem !important;
     min-height: 10rem;
   }
@@ -124,3 +98,23 @@
     height: 90%;
   }
 }
+
+
+@media (max-width: 991px) {
+    .top-about {
+        flex-direction: column;
+      }
+
+      .top-about > div:nth-child(2) {
+        display: none !important;
+      }
+
+
+      .mosque-back {
+        display: none !important;
+      }
+      
+      .mosque-front {
+        display: none !important;
+      }
+  }

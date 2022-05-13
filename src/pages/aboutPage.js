@@ -8,6 +8,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Badge from "react-bootstrap/Badge";
 
 import { whoAreWe } from "../../src/assets/texts";
+import tempImg from "../assets/mosque-placeholder.png";
 
 class AboutPage extends React.Component {
   constructor() {
@@ -22,7 +23,6 @@ class AboutPage extends React.Component {
     this.displayModal = this.displayModal.bind(this);
     this.handleReadMoreBt = this.handleReadMoreBt.bind(this);
     this.displayAboutCards = this.displayAboutCards.bind(this);
-    this.displayFlowerBackground = this.displayFlowerBackground.bind(this);
   }
 
   componentDidMount() {
@@ -33,14 +33,28 @@ class AboutPage extends React.Component {
     window.removeEventListener("scroll", this.handlePageScroll);
   }
 
+  /**
+   * This hander to set the pae scorlling positions
+   */
   handlePageScroll() {
     this.setState({ scrollY: window.pageYOffset });
   }
 
+  /**
+   * set the popup modal on phone screens (991px)
+   *
+   * @param {*} isModalShown set to true if the modal is open, or false if closed
+   */
   handleReadMoreBt(isModalShown) {
     this.setState({ showModal: isModalShown });
   }
 
+  /**
+   * dispaly the modal on the phone screen. The modal will display
+   * the rest of the wwica about texts
+   *
+   * @returns the about wwica modal
+   */
   displayModal() {
     const { showModal } = this.state;
 
@@ -68,28 +82,28 @@ class AboutPage extends React.Component {
     return (
       <div className="top-about">
         <div>
-          <h4>About WWICA</h4>
+          <div className="mb-2 text-muted card-subtitle h6">About WWICA</div>
           {whoAreWe.map((text, _) => (
             <p>{text}</p>
           ))}
 
           <br></br>
-          <Button
-            variant="outline-light"
-            onClick={() => this.handleReadMoreBt(true)}
-          >
+          <Button variant="success" onClick={() => this.handleReadMoreBt(true)}>
             Read More
           </Button>
         </div>
 
-        <div
-          className="mosque-back"
-          style={{ transform: `translateX(${scrollY * -0.06}px)` }}
-        >
+        <div>
+          <div
+            className="mosque-back"
+            style={{ transform: `translateY(${scrollY * -0.2}px)` }}
+          ></div>
           <div
             className="mosque-front"
-            style={{ transform: `translateX(${scrollY * 0.2}px)` }}
-          ></div>
+            style={{ transform: `translateY(${scrollY * 0.1}px)` }}
+          >
+            <img src={tempImg} />
+          </div>
         </div>
       </div>
     );
@@ -186,24 +200,12 @@ class AboutPage extends React.Component {
     );
   }
 
-  displayFlowerBackground() {
-    const { scrollY } = this.state;
-
-    return (
-      <div
-        className="flower-background"
-        style={{ transform: `translateY(${scrollY * 0.1}px)` }}
-      ></div>
-    );
-  }
-
   render() {
     return (
       <div className="about-page">
         <this.displayModal></this.displayModal>
         <this.displayAbout></this.displayAbout>
         <this.displayAboutCards></this.displayAboutCards>
-        <this.displayFlowerBackground></this.displayFlowerBackground>
       </div>
     );
   }
