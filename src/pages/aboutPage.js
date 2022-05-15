@@ -76,6 +76,13 @@ class AboutPage extends React.Component {
     );
   }
 
+  /**
+   *  Display the about top texts on the screen all the texts are in whoAreWe
+   * object. A read-more button will be dispalyed for phone screen sizes. Finally 
+   * and image of the mosque is also displayed on the side of the text
+   * 
+   * @returns about wwica
+   */
   displayAbout() {
     const { scrollY } = this.state;
 
@@ -102,13 +109,19 @@ class AboutPage extends React.Component {
             className="mosque-front"
             style={{ transform: `translateY(${scrollY * 0.1}px)` }}
           >
-            <img src={tempImg} />
+            <img src={tempImg} alt="mosque" />
           </div>
         </div>
       </div>
     );
   }
 
+  /**
+   * Dispaly about wwica cards; Board of Trustees, Annual reports, Key Officers
+   * and Treasurer
+   * 
+   * @returns about wwwica cards
+   */
   displayAboutCards() {
     return (
       <div className="body-about">
