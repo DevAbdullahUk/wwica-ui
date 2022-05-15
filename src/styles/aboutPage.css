@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.about-page {
+  padding-top: 5rem;
+  height: 100%;
+}
+
+.top-about {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.top-about > div {
+  padding: 3rem 8rem;
+}
+
+.top-about > div > p {
+  color: var(--bs-gray-900);
+}
+
+.top-about > div > p:nth-child(3) {
+  font-weight: 300;
+  font-family: "Pacifico", cursive;
+  padding: 1rem 5rem;
+  color: var(--accent-color);
+}
+
+.top-about > div:nth-child(2) {
+  position: relative;
+}
+
+.mosque-back {
+  position: absolute;
+  background-image: radial-gradient(#135733 2.5px, transparent 2.5px);
+  background-size: 16px 16px;
+  background-color: #ffffff;
+  width: 20rem;
+  height: 23rem;
+  margin: 3rem;
+}
+
+.mosque-front {
+  display: inline-block; 
+   margin: 0 auto;
+  background-color: var(--accent-color);
+}
+
+.mosque-front > img {
+  width: 19rem;
+  padding-top: 2rem;
+}
+
+.top-about > div > Button {
+  display: none;
+}
+
+.body-about {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-about > .card {
+  width: 20rem !important;
+  min-height: 20rem;
+}
+
+@media (max-width: 1482px) {
+  .top-about > div > Button {
+    display: inline;
+  }
+
+  .top-about > div:first-of-type > p:not(:first-of-type) {
+    display: none !important;
+  }
+
+  .top-about > div {
+    padding: 3rem 4rem;
+  }
+
+  .body-about > .card {
+    margin-top: 2rem;
+    width: 40rem !important;
+    min-height: 10rem;
+  }
+
+  .about-page {
+    height: 90%;
+  }
+}
+
+
+@media (max-width: 991px) {
+    .top-about {
+        flex-direction: column;
+      }
+
+      .top-about > div:nth-child(2) {
+        display: none !important;
+      }
+
+
+      .mosque-back {
+        display: none !important;
+      }
+      
+      .mosque-front {
+        display: none !important;
+      }
+  }
