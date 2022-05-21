@@ -15,9 +15,12 @@
   justify-content: center;
   align-items: center;
 
-  flex-direction: column;
-  max-width: 60rem;
+  flex-wrap: wrap;
+  max-width: 70rem;
   gap: 1rem;
+
+  background-color: #f8f9fa;
+  padding: 3rem;
 }
 
 .services-dropdown {
@@ -25,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: 5rem;
   gap: 1rem;
 }
 
@@ -57,5 +60,14 @@
   text-decoration: underline;
 }
 
+.hidden {
+  display: none !important;
+}
 
-/* #f8f9fa */
+@media (max-width: 1313px) {
+  .services-main {
+    max-width: 100%;
+    padding: 1rem;
+    background-color:white;
+  }
+}
