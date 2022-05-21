@@ -60,3 +60,7 @@ body,
 .card > * > a:hover {
   color: var(--hiddend-color);
 }
+
+
+/* bootstrap */
+ .dropdown-menu > a:active { background-color: var(--accent-color) !important; }

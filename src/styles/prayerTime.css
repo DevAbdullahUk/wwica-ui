@@ -43,12 +43,15 @@
 @media (max-width: 991px) {
 
     .prayer-cards-group {
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         width: 100%;
         border-radius: .10rem !important;
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
         padding-top: calc(100%/11);
         padding-bottom: calc(100%/11);
+
+
+
     }
 
     .prayer-icon {
@@ -64,4 +67,6 @@
         font-weight: 400;
     }
     
+
+ 
 }

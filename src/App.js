@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import Footer from "./components/footer";
 import AboutPage from "./pages/aboutPage";
+import Services from "./pages/servicesPage";
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <Routes>
             <Route index element={<MainPage></MainPage>} />
             <Route path="about" element={<AboutPage></AboutPage>} />
-
+            <Route path="services" element={<Services></Services>} />
             <Route
               path="*"
               element={<div> No page, or not implemented yet 🏗️</div>}

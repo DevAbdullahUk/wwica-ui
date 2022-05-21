@@ -49,7 +49,6 @@ class Header extends Component {
                 <Nav.Link href="/about">About us</Nav.Link>
                 <Nav.Link href="/services">Services</Nav.Link>
                 <Nav.Link href="/school">Islamic Education</Nav.Link>
-                <Nav.Link href="/zakat">Zakat</Nav.Link>
             </>
         )
     }
